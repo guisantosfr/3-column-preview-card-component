@@ -28,6 +28,7 @@ h2 {
 
 .container {
   width: 85%;
+  max-width: 950px;
   margin: 5rem auto;
 }
 
@@ -89,23 +90,47 @@ h2 {
   margin-bottom: 3rem;
 }
 
+@media (min-width: 1000px) {
+  .card__description {
+    margin-bottom: 4rem;
+  }
+}
+
 .card__button {
   text-decoration: none;
   background-color: #f2f2f2;
-  padding: .9em 1.8em;
-  border-radius: 20px;
+  padding: .75em 2em;
+  border-radius: 30px;
+  border: 3px solid #f2f2f2;
+  cursor: pointer;
+}
+
+.card__button:hover {
+  color: #f2f2f2;
 }
 
 .card__button--sedan {
   color: #e38826;
 }
 
+.card__button--sedan:hover {
+  background-color: #e38826;
+}
+
 .card__button--suv {
   color: #006970;
 }
 
+.card__button--suv:hover {
+  background-color: #006970;
+}
+
 .card__button--luxury {
   color: #004241;
+}
+
+.card__button--luxury:hover {
+  background-color: #004241;
 }
 
 .attribution {
