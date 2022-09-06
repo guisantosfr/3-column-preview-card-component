@@ -16,7 +16,8 @@ body {
   font-size: 15px;
 }
 
-p {
+p,
+a {
   font-family: 'Lexend Deca', sans-serif;
 }
 
@@ -25,14 +26,12 @@ h2 {
 }
 
 .container {
-  width: 90%;
+  width: 85%;
   margin: 5rem auto;
 }
 
 .card {
-  background-color: #e38826;
-  border: 1px dashed blue;
-  padding: 4rem 3.25rem;
+  padding: 4rem 2.75rem;
 }
 
 .card:first-child {
@@ -43,6 +42,18 @@ h2 {
 .card:last-child {
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
+}
+
+.card--sedan {
+  background-color: #e38826;
+}
+
+.card--suv {
+  background-color: #006970;
+}
+
+.card--luxury {
+  background-color: #004241;
 }
 
 .card__title {
@@ -62,5 +73,27 @@ h2 {
   background-color: #f2f2f2;
   padding: .9em 1.8em;
   border-radius: 20px;
+}
+
+.card__button--sedan {
+  color: #e38826;
+}
+
+.card__button--suv {
+  color: #006970;
+}
+
+.card__button--luxury {
+  color: #004241;
+}
+
+.attribution {
+  font-size: 1rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.attribution a {
+  color: #3e52a3;
 }
 /*# sourceMappingURL=style.css.map */

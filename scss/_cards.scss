@@ -1,13 +1,10 @@
 .container {
-  width: 90%;
+  width: 85%;
   margin: 5rem auto;
 }
 
 .card {
-  background-color: $bright-orange; // temporary
-  border: 1px dashed blue;
-
-  padding: 4rem 3.25rem;
+  padding: 4rem 2.75rem;
 
   &:first-child {
     border-top-left-radius: 10px;
@@ -17,6 +14,18 @@
   &:last-child {
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
+  }
+
+  &--sedan {
+    background-color: $bright-orange;
+  }
+
+  &--suv {
+    background-color: $dark-cyan;
+  }
+
+  &--luxury {
+    background-color: $very-dark-cyan;
   }
 
   &__title {
@@ -36,5 +45,17 @@
     background-color: $very-light-gray;
     padding: .9em 1.8em;
     border-radius: 20px;
+
+    &--sedan {
+      color: $bright-orange;
+    }
+
+    &--suv {
+      color: $dark-cyan;
+    }
+
+    &--luxury {
+      color: $very-dark-cyan;
+    }
   }
 }
