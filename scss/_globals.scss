@@ -9,10 +9,16 @@
 }
 
 body {
+  min-height: 100vh;
   padding: 0;
   margin: 0;
   font-size: $font-size;
   background-color: $very-light-gray;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 p,
